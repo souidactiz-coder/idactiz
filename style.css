@@ -1,0 +1,14 @@
+
+:root{--gold:#dca84c;--gold2:#ffd77e;--bg:#080706;--panel:rgba(12,10,8,.86);--text:#f7f3eb;--muted:#c7beb0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Arial,Helvetica,sans-serif;background:#050403 url('wallpaper.png') center/cover fixed no-repeat}
+body:before{content:"";position:fixed;inset:0;background:rgba(0,0,0,.68);z-index:-1}
+.wrap{width:min(94%,520px);margin:auto;padding:24px 0 36px}.hero{text-align:center;padding:12px 8px 8px}
+.logo{width:min(86%,390px);max-height:310px;object-fit:contain;filter:drop-shadow(0 8px 18px #000)}
+h1,h2{color:var(--gold2);letter-spacing:.06em}h1{margin:14px 0 5px;font-size:1.65rem}.role{font-size:1.05rem;margin:0 0 7px}.place,.muted{color:var(--muted)}
+.slogan{text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;color:#eee0c5;margin:6px auto 18px;max-width:360px}
+.card,.service{background:linear-gradient(145deg,rgba(28,22,15,.93),rgba(5,5,5,.93));border:1px solid #805d25;border-radius:18px;box-shadow:0 10px 30px #0008,inset 0 0 22px #d99b3010}
+.actions{display:grid;gap:11px;margin:16px 0}.btn{display:flex;align-items:center;gap:12px;width:100%;padding:15px 17px;border:1px solid var(--gold);border-radius:15px;background:linear-gradient(135deg,#17120c,#090807);color:white;text-decoration:none;font-weight:700;box-shadow:0 0 18px #d99b3020}.btn span{font-size:1.35rem}.btn small{display:block;color:#d7cec0;font-weight:400;margin-top:3px}.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}.navbtn{justify-content:center;text-align:center;padding:18px 10px;color:var(--gold2)}
+.section{margin-top:22px}.section-title{text-align:center;margin:0 0 13px}.service{padding:17px;margin:10px 0}.service h3{margin:0 0 7px;color:#f5c76c}.service p{margin:0;color:#ddd2c2;line-height:1.5}
+.back{display:inline-block;color:var(--gold2);text-decoration:none;margin-bottom:12px}.about{padding:20px;line-height:1.6}.systems{display:grid;grid-template-columns:1fr 1fr;gap:10px}.system{padding:14px;text-align:center}
+footer{text-align:center;color:#9e9487;font-size:.8rem;padding:28px 5px 5px}
+@media(max-width:380px){.two,.systems{grid-template-columns:1fr}.logo{width:96%}}
