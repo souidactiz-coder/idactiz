@@ -6,10 +6,11 @@
 <a class="btn" href="https://www.instagram.com/idactiz.concordia/"><span>◎</span><div>Instagram<small>@idactiz.concordia</small></div></a>
 <a class="btn" href="mailto:souidactiz@gmail.com"><span>✉</span><div>E-mail<small>souidactiz@gmail.com</small></div></a>
 </section>
-<div class="two"><button class="btn navbtn" onclick="baixarContato()">👤 Salvar contato</button><button class="btn navbtn" onclick="compartilhar()">↗ Compartilhar</button></div>
+<div class="two"><a class="btn navbtn" href="idactiz.vcf" download="IDACTIZ-Ismael-Oliveira.vcf">
+    👤 Salvar contato
+</a><button class="btn navbtn" onclick="compartilhar()">↗ Compartilhar</button></div>
 <section class="section"><div class="two"><a class="btn navbtn" href="servicos.html">🔧 SERVIÇOS</a><a class="btn navbtn" href="sobre.html">🐉 SOBRE A IDACTIZ</a></div></section>
 <footer>© 2026 IDACTIZ • Concórdia – SC</footer></main>
 <script>
-function baixarContato(){const v=`BEGIN:VCARD\nVERSION:3.0\nFN:Ismael S. Oliveira\nORG:IDACTIZ\nTITLE:Manutenção de computadores e notebooks\nTEL;TYPE=CELL:+5549999695359\nEMAIL:souidactiz@gmail.com\nURL:https://www.instagram.com/idactiz.concordia/\nADR:;;Concórdia;SC;;;Brasil\nEND:VCARD`;const b=new Blob([v],{type:'text/vcard'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='IDACTIZ-Ismael-Oliveira.vcf';a.click();URL.revokeObjectURL(a.href)}
 async function compartilhar(){if(navigator.share){await navigator.share({title:'IDACTIZ',text:'IDACTIZ — Soluções que fazem a tecnologia funcionar.',url:location.href})}else{navigator.clipboard.writeText(location.href);alert('Link copiado.');}}
 </script></body></html>
