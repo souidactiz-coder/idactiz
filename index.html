@@ -1,16 +1,85 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080706"><title>IDACTIZ | Ismael S. Oliveira</title><link rel="icon" href="idactiz-icon.png"><link rel="stylesheet" href="style.css"></head><body><main class="wrap">
-<section class="hero"><img class="logo" src="logo.png" alt="IDACTIZ"><div class="slogan">Soluções que fazem a tecnologia funcionar.</div><h1>Ismael S. Oliveira</h1><p class="role">Manutenção de computadores e notebooks</p><p class="place">📍 Concórdia – SC</p></section>
-<section class="actions">
-<a class="btn" href="https://wa.me/5549999695359"><span>◉</span><div>WhatsApp<small>Conversar agora</small></div></a>
-<a class="btn" href="tel:+5549999695359"><span>☎</span><div>Ligar<small>(49) 9 9969-5359</small></div></a>
-<a class="btn" href="https://www.instagram.com/idactiz.concordia/"><span>◎</span><div>Instagram<small>@idactiz.concordia</small></div></a>
-<a class="btn" href="mailto:souidactiz@gmail.com"><span>✉</span><div>E-mail<small>souidactiz@gmail.com</small></div></a>
-</section>
-<div class="two"><a class="btn navbtn" href="idactiz.vcf" download="IDACTIZ-Ismael-Oliveira.vcf">
-    👤 Salvar contato
-</a><button class="btn navbtn" onclick="compartilhar()">↗ Compartilhar</button></div>
-<section class="section"><div class="two"><a class="btn navbtn" href="servicos.html">🔧 SERVIÇOS</a><a class="btn navbtn" href="sobre.html">🐉 SOBRE A IDACTIZ</a></div></section>
-<footer>© 2026 IDACTIZ • Concórdia – SC</footer></main>
-<script>
-async function compartilhar(){if(navigator.share){await navigator.share({title:'IDACTIZ',text:'IDACTIZ — Soluções que fazem a tecnologia funcionar.',url:location.href})}else{navigator.clipboard.writeText(location.href);alert('Link copiado.');}}
-</script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#07090d">
+  <meta name="description" content="IDACTIZ — manutenção de computadores e notebooks em Concórdia-SC. Diagnóstico, conserto, otimização, upgrades, sistemas, backup e suporte.">
+  <title>IDACTIZ | Ismael S. Oliveira</title>
+  <link rel="icon" href="idactiz-icon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="wrap">
+    <section class="hero card hero-card">
+      <div class="brand-frame">
+        <img class="logo" src="logo.png" alt="IDACTIZ">
+      </div>
+      <div class="eyebrow">TECNOLOGIA • DESEMPENHO • CONFIANÇA</div>
+      <div class="slogan">Soluções que fazem a tecnologia funcionar.</div>
+      <h1>Ismael S. Oliveira</h1>
+      <p class="role">Manutenção de computadores e notebooks</p>
+      <p class="place">📍 Concórdia – SC</p>
+    </section>
+
+    <section class="actions" aria-label="Contato">
+      <a class="btn btn-whatsapp" href="https://wa.me/5549999695359" target="_blank" rel="noopener">
+        <span class="ico">◉</span><div><strong>WhatsApp</strong><small>Conversar agora</small></div><b>›</b>
+      </a>
+      <a class="btn" href="tel:+5549999695359">
+        <span class="ico">☎</span><div><strong>Ligar</strong><small>(49) 9 9969-5359</small></div><b>›</b>
+      </a>
+      <a class="btn" href="https://www.instagram.com/idactiz.concordia/" target="_blank" rel="noopener">
+        <span class="ico">◎</span><div><strong>Instagram</strong><small>@idactiz.concordia</small></div><b>›</b>
+      </a>
+      <a class="btn" href="mailto:souidactiz@gmail.com">
+        <span class="ico">✉</span><div><strong>E-mail</strong><small>souidactiz@gmail.com</small></div><b>›</b>
+      </a>
+    </section>
+
+    <div class="two compact">
+      <a class="btn navbtn" href="idactiz.vcf" download="IDACTIZ-Ismael-Oliveira.vcf">👤 <span>Salvar contato</span></a>
+      <button class="btn navbtn" type="button" onclick="compartilhar()">↗ <span>Compartilhar</span></button>
+    </div>
+
+    <section class="section">
+      <div class="two">
+        <a class="feature-card" href="servicos.html">
+          <span class="feature-icon">🔧</span>
+          <div><strong>SERVIÇOS</strong><small>Conheça o que fazemos</small></div>
+          <b>›</b>
+        </a>
+        <a class="feature-card" href="sobre.html">
+          <span class="feature-icon">🐉</span>
+          <div><strong>SOBRE A IDACTIZ</strong><small>Nossa história e objetivo</small></div>
+          <b>›</b>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-line"></div>
+      <span>© 2026 IDACTIZ • Concórdia – SC</span>
+    </footer>
+  </main>
+
+  <script>
+    async function compartilhar(){
+      const data={
+        title:'IDACTIZ',
+        text:'IDACTIZ — Soluções que fazem a tecnologia funcionar.',
+        url:location.href
+      };
+      if(navigator.share){
+        try{ await navigator.share(data); }catch(e){}
+      }else{
+        await navigator.clipboard.writeText(location.href);
+        alert('Link copiado.');
+      }
+    }
+  </script>
+</body>
+</html>
